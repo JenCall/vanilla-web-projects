@@ -47,21 +47,24 @@ function checkPassword(password, password2) {
 }
 
 // Check required fields
-function checkRequired(inputArr) {
-    inputArr.forEach(function(input) {
-        if (input.value === '') {
-            showErrorMessage(input, 'Value cannot be empty.')
+function checkRequiredFields(inputArray) {
+    let isRequired = false;
+    inputArray.forEach(function(input) {
+        if (input.value.trim() === '') {
+            showErrorMessage(input, `${getFieldName(input)} is required.`);
+            isRequired = true;
         } else {
-            showSuccessMessage(input)
+            showSuccessMessage(input);
         }
     });
+    return isRequired;
 }
 
 // Event listeners
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    checkRequired([username, email, password, password2])
+    checkRequiredFields([username, email, password, password2])
     checkEmail(email)
     checkLength(username, 3, 15)
     checkLength(password, 6, 20)
