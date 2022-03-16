@@ -16,6 +16,7 @@ function showSuccess(input, message) {
     formControl.className = 'form-control success';
 }
 
+// Check if Email is Valid
 function checkEmail(input) {
     const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (reg.test(input.value.trim())) {
@@ -25,6 +26,16 @@ function checkEmail(input) {
     }
 }
 
+// Check Length of username and password
+function checkLength(input, min, max) {
+    if (input.value.length < min) {
+        showError(input, 'There should be at least 3 characters.')
+    } else if(input.value.length > max) {
+        showError(input, 'There should be no more than 15 characters.')
+    } else {
+        showSuccess(input)
+    }
+}
 // Check required fields
 function checkRequired(inputArr) {
     inputArr.forEach(function(input) {
@@ -38,4 +49,5 @@ form.addEventListener('submit', function(e) {
 
     checkRequired([username, email, password, password2])
     checkEmail(email)
+    checkLength(username, 3, 15)
 });
