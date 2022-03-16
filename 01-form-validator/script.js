@@ -16,7 +16,6 @@ function showSuccessMessage(input, message) {
     formControl.className = 'form-control success';
 }
 
-// Check if Email is Valid
 function checkEmail(input) {
     const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (reg.test(input.value.trim())) {
@@ -26,7 +25,6 @@ function checkEmail(input) {
     }
 }
 
-// Check Length of username and password
 function checkLength(input, min, max) {
     if (input.value.length < min) {
         showErrorMessage(
