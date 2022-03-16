@@ -29,11 +29,17 @@ function checkEmail(input) {
 // Check Length of username and password
 function checkLength(input, min, max) {
     if (input.value.length < min) {
-        showErrorMessage(input, 'There should be at least 3 characters.')
+        showErrorMessage(
+            input, 
+            `${getFieldName(input)} should be at least ${min} characters.`
+        );
     } else if(input.value.length > max) {
-        showErrorMessage(input, 'There should be no more than 15 characters.')
+        showErrorMessage(
+            input, 
+            `${getFieldName(input)} should be less than ${max} characters.`
+        );
     } else {
-        showSuccessMessage(input)
+        showSuccessMessage(input);
     }
 }
 
