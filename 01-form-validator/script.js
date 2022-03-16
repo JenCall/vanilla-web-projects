@@ -49,7 +49,10 @@ function checkPasswordsMatch(input1, input2) {
     }
 }
 
-// Check required fields
+function getFieldName(input) {
+    return (input.id.charAt(0).toUpperCase() + input.id.slice(1));
+}
+
 function checkRequiredFields(inputArray) {
     let isRequired = false;
     inputArray.forEach(function(input) {
