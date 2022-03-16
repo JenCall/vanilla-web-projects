@@ -16,9 +16,9 @@ function showSuccess(input, message) {
     formControl.className = 'form-control success';
 }
 
-function isValidEmail() {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (re.test(input.value.trim())) {
+function checkEmail(input) {
+    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (reg.test(input.value.trim())) {
         showSuccess(input);
     } else {
         showError(input, 'Email is not valid');
@@ -37,4 +37,5 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
 
     checkRequired([username, email, password, password2])
+    checkEmail(email)
 });
