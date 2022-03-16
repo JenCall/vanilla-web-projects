@@ -36,10 +36,24 @@ function checkLength(input, min, max) {
         showSuccess(input)
     }
 }
+
+// Check password
+function checkPassword(password, password2) {
+    if (password.value === password2.value) {
+        showSuccess(password2)
+    } else {
+        showError(password2, 'Passwords are not the same.')
+    }
+}
+
 // Check required fields
 function checkRequired(inputArr) {
     inputArr.forEach(function(input) {
-        console.log(input);
+        if (input.value === '') {
+            showError(input, 'Value cannot be empty.')
+        } else {
+            showSuccess(input)
+        }
     });
 }
 
@@ -50,4 +64,6 @@ form.addEventListener('submit', function(e) {
     checkRequired([username, email, password, password2])
     checkEmail(email)
     checkLength(username, 3, 15)
+    checkLength(password, 6, 20)
+    checkPassword(password, password2)
 });
