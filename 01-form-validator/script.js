@@ -43,12 +43,9 @@ function checkLength(input, min, max) {
     }
 }
 
-// Check password
-function checkPassword(password, password2) {
-    if (password.value === password2.value) {
-        showSuccessMessage(password2)
-    } else {
-        showErrorMessage(password2, 'Passwords are not the same.')
+function checkPasswordsMatch(input1, input2) {
+    if (input1.value !== input2.value) {
+        showErrorMessage(input2, 'Passwords are not the same.');
     }
 }
 
@@ -74,5 +71,5 @@ form.addEventListener('submit', function(e) {
     checkEmail(email)
     checkLength(username, 3, 15)
     checkLength(password, 6, 20)
-    checkPassword(password, password2)
+    checkPasswordsMatch(password, password2)
 });
