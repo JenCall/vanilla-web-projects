@@ -4,14 +4,14 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
-function showError(input, message) {
+function showErrorMessage(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const small = formControl.querySelector('small')
     small.innerText = message;
 }
 
-function showSuccess(input, message) {
+function showSuccessMessage(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
@@ -20,29 +20,29 @@ function showSuccess(input, message) {
 function checkEmail(input) {
     const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (reg.test(input.value.trim())) {
-        showSuccess(input);
+        showSuccessMessage(input);
     } else {
-        showError(input, 'Email is not valid');
+        showErrorMessage(input, 'Email is not valid');
     }
 }
 
 // Check Length of username and password
 function checkLength(input, min, max) {
     if (input.value.length < min) {
-        showError(input, 'There should be at least 3 characters.')
+        showErrorMessage(input, 'There should be at least 3 characters.')
     } else if(input.value.length > max) {
-        showError(input, 'There should be no more than 15 characters.')
+        showErrorMessage(input, 'There should be no more than 15 characters.')
     } else {
-        showSuccess(input)
+        showSuccessMessage(input)
     }
 }
 
 // Check password
 function checkPassword(password, password2) {
     if (password.value === password2.value) {
-        showSuccess(password2)
+        showSuccessMessage(password2)
     } else {
-        showError(password2, 'Passwords are not the same.')
+        showErrorMessage(password2, 'Passwords are not the same.')
     }
 }
 
@@ -50,9 +50,9 @@ function checkPassword(password, password2) {
 function checkRequired(inputArr) {
     inputArr.forEach(function(input) {
         if (input.value === '') {
-            showError(input, 'Value cannot be empty.')
+            showErrorMessage(input, 'Value cannot be empty.')
         } else {
-            showSuccess(input)
+            showSuccessMessage(input)
         }
     });
 }
