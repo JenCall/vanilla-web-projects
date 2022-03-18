@@ -32,6 +32,11 @@ body {
     appearance: none;
 }
 
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
 .seat {
     background-color: #444451;
     height: 12px;
@@ -39,7 +44,7 @@ body {
     margin: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+}
   
 .seat.selected {
     background-color: #6feaf6;
@@ -60,10 +65,6 @@ body {
 .seat:not(.occupied):hover {
     cursor: pointer;
     transform: scale(1.2);
-}
-
-.row {
-    display: flex;
 }
 
 .showcase .seat:not(.occupied):hover {
@@ -91,3 +92,17 @@ body {
 .showcase li small {
     margin-left: 2px;
 }
+
+.row {
+    display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+  
