@@ -15,4 +15,17 @@ function populatetUI() {
             }
         });
     }
+
+    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+
+    if (selectedMovieIndex!== null) {
+        movieSelect.selectedIndex = selectedMovieIndex;
+    }
 }
+
+// Movie select event
+movieSelect.addEventListener('change', e => {
+    ticketPrice = +e.target.value;
+    setMovieData(e.target.selectedIndex, e.target.value);
+    updateSelectedCount();
+});
