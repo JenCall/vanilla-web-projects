@@ -40,6 +40,14 @@ function updateProgress() {
     if(mins < video.duration){
         mins = '0' + String(mins);
     }
+
+    // Get Seconds
+    let secs = Math.floor(video.currentTime % 60);
+    if(secs < video.duration){
+        secs = '0' + String(secs);
+    }
+
+    timestamp.innerHTML = `${mins}:${secs}`;
 }
 
 //set video time to progress
