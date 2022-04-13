@@ -52,7 +52,7 @@ function updateProgress() {
 
 //set video time to progress
 function setVideoProgress() {
-    return true
+    video.currentTime = (+progress.value * video.duration) / 100;
 }
 
 //stop video
