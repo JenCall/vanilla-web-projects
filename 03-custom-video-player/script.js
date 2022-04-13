@@ -33,7 +33,13 @@ function updatePlayIcon() {
 
 //update progress & timestamp
 function updateProgress() {
-    return true
+    progress.value = (video.currentTime / video.duration) * 100;
+
+    // Get the minutes
+    let mins = Math.floor(video.currentTime / 60);
+    if(mins < video.duration){
+        mins = '0' + String(mins);
+    }
 }
 
 //set video time to progress
