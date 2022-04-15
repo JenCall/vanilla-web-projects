@@ -8,7 +8,12 @@ const rateEl = document.getElementById('rate');
 const swap = document.getElementById('swap');
 
 //Fetch Exchange rates and update the DOM
-function calculate() {}
+function calculate() {
+    const currencyOne = currencyElOne.value;
+    const currencyTwo = currencyElTwo.value;
+
+    
+}
 
 // Event Listeners
 currencyElOne.addEventListener('change', calculate);
