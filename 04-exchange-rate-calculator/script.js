@@ -18,7 +18,9 @@ function calculate() {
             // console.log(data); 
             const rate = data.rates[currencyTwo];
             // console.log(rate);
-            rateEl.innerText = `1 ${currencyOne} = ${rate}`
+            rateEl.innerText = `1 ${currencyOne} = ${rate} ${currencyTwo}`
+
+            amountElTwo
         });
 }
 
