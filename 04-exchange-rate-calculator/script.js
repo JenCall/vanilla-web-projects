@@ -29,5 +29,11 @@ currencyElOne.addEventListener('change', calculate);
 currencyElTwo.addEventListener('change', calculate);
 amountElOne.addEventListener('input', calculate);
 amountElTwo.addEventListener('input', calculate);
+swap.addEventListener('click', () => {
+    const temp = currencyElOne.value;
+    currencyElOne.value = currencyElTwo.value;
+    currencyElTwo.value = temp;
+    calculate()
+})
 
 calculate();
