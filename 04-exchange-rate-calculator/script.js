@@ -20,7 +20,7 @@ function calculate() {
             // console.log(rate);
             rateEl.innerText = `1 ${currencyOne} = ${rate} ${currencyTwo}`
 
-            amountElTwo
+            amountElTwo.value = (amountElOne.value * rate).toFixed(2)
         });
 }
 
