@@ -53,3 +53,7 @@ function updateDOM(providedData = data) {
     });
 }
 
+// Event listeners
+addUserBtn.addEventListener('click', getRandomUser);
+doubleBtn.addEventListener('click', doubleMoney);
+
