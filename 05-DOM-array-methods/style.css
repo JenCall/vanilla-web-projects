@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #f4f4f4;
+    background: #EDE6DB;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ aside {
 
 button {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #417D7A;
     border: 1px solid #111;
     border-radius: 5px;
     display: block;
