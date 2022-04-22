@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,4 +19,17 @@ body {
 body.show-nav {
     /* Width of nav */
     transform: translateX(200px);
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
 }
