@@ -147,3 +147,14 @@ button:focus {
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
 }
+
+.modal-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+  
+.modal-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
