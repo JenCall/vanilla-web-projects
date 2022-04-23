@@ -128,3 +128,7 @@ button:focus {
     right: 0;
     bottom: 0;
 }
+
+.modal-container.show-modal {
+    display: block;
+}
