@@ -8,3 +8,6 @@ toggle.addEventListener('click', () => document.body.classList.toggle('show-nav'
 
 // show modal
 open.addEventListener('click', () => modal.classList.add('show-modal'));
+
+// hide modal
+close.addEventListener('click', () => modal.classList.remove('show-modal'));
