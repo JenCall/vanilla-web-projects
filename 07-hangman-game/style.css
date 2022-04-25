@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    background-color: blanchedalmond;
+    color: blueviolet;
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: blueviolet;
+    stroke-width: 2%;
 }
