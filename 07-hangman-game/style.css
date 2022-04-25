@@ -14,3 +14,7 @@ body {
     stroke: blueviolet;
     stroke-width: 2%;
 }
+
+.figure-part {
+    display: none;
+}
