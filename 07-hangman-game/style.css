@@ -31,7 +31,8 @@ h1 {
 .figure-container {
     fill: transparent;
     stroke: blueviolet;
-    stroke-width: 2%;
+    stroke-width: 4px;
+    stroke-linecap: round;
 }
 
 .figure-part {
