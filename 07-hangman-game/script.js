@@ -30,6 +30,16 @@ function displayWord() {
 			)
 			.join('')}
   `;
+
+  const innerWord = wordEl.innerText.replace(/[ \n]/g, '');
+
+	if (innerWord === selectedWord) {
+		finalMessage.innerText = 'Congratulations! You won! 😃';
+		finalMessageRevealWord.innerText = '';
+		popup.style.display = 'flex';
+
+		playable = false;
+	}
 }  
 
 displayWord()
