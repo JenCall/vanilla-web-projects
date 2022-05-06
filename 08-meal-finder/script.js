@@ -15,6 +15,12 @@ function searchMeal(e) {
 
     // Get search term
     const term = search.value;
+
+    // Check for empty
+    if (term.trim()) {
+    } else  {
+        alert('Please enter a search term')
+    }
 }
 
 // Event listeners
