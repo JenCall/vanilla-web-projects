@@ -48,5 +48,18 @@ function searchMeal(e) {
   }
 }
 
+
+// Fetch meal by ID
+function getMealById(mealID) {
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
+      .then(res => res.json())
+      .then(data => {
+        const meal = data.meals[0];
+  
+        addMealToDOM(meal);
+    });
+}
+
+
 // Event listeners
 submit.addEventListener('submit', searchMeal);
