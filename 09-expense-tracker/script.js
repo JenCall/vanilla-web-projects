@@ -27,3 +27,11 @@ function addTransaction(transaction) {
 
     list.appendChild(item);
 }
+
+// init app
+function init() {
+    list.innerHTML='';
+    transactions.forEach(addTransaction);
+}
+
+init();
