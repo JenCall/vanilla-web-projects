@@ -12,3 +12,16 @@ const dummyTransactions = [
   { id: 3, text: 'Book', amount: -10 },
   { id: 4, text: 'Camera', amount: 150 }
 ];
+
+// Add transaction
+function addTransaction(transaction) {
+    // get sign
+    const sign = transaction.amount < 0? '-' : '+';
+
+    const item = document.createElement('li');
+  
+    // add class based on value
+    item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
+
+    item.innerHTML = `${transaction.text} <span>${sign}${transaction.amount}</span>`;
+}
