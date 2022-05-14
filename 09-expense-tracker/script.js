@@ -13,7 +13,7 @@ const dummyTransactions = [
   { id: 4, text: 'Camera', amount: 150 }
 ];
 
-// Add transaction
+// Add transaction to DOM list
 function addTransaction(transaction) {
     // get sign
     const sign = transaction.amount < 0? '-' : '+';
