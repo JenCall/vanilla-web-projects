@@ -31,6 +31,15 @@ function addTransaction(transaction) {
     list.appendChild(item);
 }
 
+// Remove transaction by ID
+function removeTransaction(id) {
+    transactions = transactions.filter(transaction => transaction.id !== id);
+  
+    updateLocalStorage();
+  
+    init();
+}
+
 // init app
 function init() {
     list.innerHTML='';
