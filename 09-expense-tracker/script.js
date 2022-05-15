@@ -13,6 +13,19 @@ const dummyTransactions = [
   { id: 4, text: 'Camera', amount: 150 }
 ];
 
+// Add transaction
+function addTransaction(e) {
+    e.preventDefault();
+
+    if(text.value.trim() === '' || amount.value.trim() === '') {
+        alert('Please add a text and amount');
+    } else {
+        const transaction = {
+            
+        }
+    }
+}
+
 // Add transaction to DOM list
 function addTransactionDOM(transaction) {
     // get sign
