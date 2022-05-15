@@ -21,8 +21,15 @@ function addTransaction(e) {
         alert('Please add a text and amount');
     } else {
         const transaction = {
+            id: generateID(),
+            text: text.value,
+            amount: amount.value
+        };
 
-        }
+        transactions.push(transaction);
+        addTransactionDOM(transaction);
+        updateValues();
+
     }
 }
 
@@ -83,8 +90,6 @@ function removeTransaction(id) {
 function init() {
     list.innerHTML='';
     transactions.forEach(addTransactionDOM);
-
-    updateValues();
 }
 
 init();
