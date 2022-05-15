@@ -14,7 +14,7 @@ const dummyTransactions = [
 ];
 
 // Add transaction to DOM list
-function addTransaction(transaction) {
+function addTransactionDOM(transaction) {
     // get sign
     const sign = transaction.amount < 0? '-' : '+';
 
@@ -64,7 +64,7 @@ function removeTransaction(id) {
 // init app
 function init() {
     list.innerHTML='';
-    transactions.forEach(addTransaction);
+    transactions.forEach(addTransactionDOM);
 
     updateValues();
 }
