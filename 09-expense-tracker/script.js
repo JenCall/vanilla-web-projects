@@ -21,9 +21,14 @@ function addTransaction(e) {
         alert('Please add a text and amount');
     } else {
         const transaction = {
-            
+
         }
     }
+}
+
+// Generate random ID
+function generateID() {
+    return Math.floor(Math.random() * 100000000);
 }
 
 // Add transaction to DOM list
