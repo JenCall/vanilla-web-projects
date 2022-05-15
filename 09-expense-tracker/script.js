@@ -23,7 +23,7 @@ function addTransaction(e) {
         const transaction = {
             id: generateID(),
             text: text.value,
-            amount: amount.value
+            amount: +amount.value
         };
 
         transactions.push(transaction);
@@ -89,7 +89,7 @@ function removeTransaction(id) {
 // init app
 function init() {
     list.innerHTML='';
-    transactions.forEach(addTransactionDOM);
+    transactions.forEach(addTransactionDOM);s
 }
 
 init();
