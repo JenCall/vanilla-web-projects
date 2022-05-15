@@ -30,6 +30,8 @@ function addTransaction(e) {
         addTransactionDOM(transaction);
         updateValues();
 
+        text.value = '';
+        amount.value = '';
     }
 }
 
