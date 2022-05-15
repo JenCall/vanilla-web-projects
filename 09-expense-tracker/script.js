@@ -51,7 +51,7 @@ function generateID() {
 // Add transaction to DOM list
 function addTransactionDOM(transaction) {
     // get sign
-    const sign = transaction.amount < 0? '-' : '+';
+    const sign = transaction.amount < 0 ? '-' : '+';
 
     const item = document.createElement('li');
   
