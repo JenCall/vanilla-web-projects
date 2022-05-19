@@ -10,3 +10,6 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
+
+// Song titles
+const songs = ['hey', 'summer', 'ukulele'];
