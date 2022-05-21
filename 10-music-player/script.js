@@ -88,3 +88,7 @@ playBtn.addEventListener('click', () => {
       playSong();
     }
 });
+
+// Change song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
