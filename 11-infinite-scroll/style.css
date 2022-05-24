@@ -27,3 +27,9 @@ h1 {
     width: 80vw;
     max-width: 800px;
 }
+
+.filter {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
