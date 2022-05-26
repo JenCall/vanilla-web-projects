@@ -95,3 +95,7 @@ h1 {
     margin: 5px;
     animation: bounce 0.5s ease-in infinite;
 }
+
+.circle:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
