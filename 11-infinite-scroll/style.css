@@ -103,3 +103,14 @@ h1 {
 .circle:nth-of-type(3) {
     animation-delay: 0.2s;
 }
+
+@keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+}
