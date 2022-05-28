@@ -32,3 +32,6 @@ async function showPosts() {
       postsContainer.appendChild(postEl);
     });
 }
+
+// Show initial posts
+showPosts();
