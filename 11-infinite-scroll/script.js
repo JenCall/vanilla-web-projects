@@ -33,7 +33,7 @@ async function showPosts() {
     });
 }
 
-/ Filter posts by input
+// Filter posts by input
 function filterPosts(e) {
   const term = e.target.value.toUpperCase();
   const posts = document.querySelectorAll('.post');
