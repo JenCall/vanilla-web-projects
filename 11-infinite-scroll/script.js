@@ -33,6 +33,20 @@ async function showPosts() {
     });
 }
 
+// Show loader & fetch more posts
+function showLoading() {
+    loading.classList.add('show');
+  
+    setTimeout(() => {
+      loading.classList.remove('show');
+  
+      setTimeout(() => {
+        page++;
+        showPosts();
+      }, 300);
+    }, 1000);
+}
+
 // Filter posts by input
 function filterPosts(e) {
   const term = e.target.value.toUpperCase();
