@@ -66,3 +66,13 @@ function filterPosts(e) {
 
 // Show initial posts
 showPosts();
+
+window.addEventListener('scroll', () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+  
+    if (scrollHeight - scrollTop === clientHeight) {
+      showLoading();
+    }
+});
+  
+filter.addEventListener('input', filterPosts);
