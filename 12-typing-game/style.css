@@ -12,4 +12,11 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
+
+button {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
