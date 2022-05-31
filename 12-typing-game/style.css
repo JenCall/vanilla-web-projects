@@ -35,3 +35,9 @@ select:focus,
 button:focus {
   outline: 0;
 }
+
+.settings-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
