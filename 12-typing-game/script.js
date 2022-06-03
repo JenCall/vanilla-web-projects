@@ -40,3 +40,8 @@ let score = 0;
 
 // Init time
 let time = 10;
+
+// Generate random word from array
+function getRandomWord() {
+    return words[Math.floor(Math.random() * words.length)];
+}
