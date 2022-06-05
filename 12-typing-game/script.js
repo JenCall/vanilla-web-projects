@@ -56,7 +56,6 @@ difficultySelect.value =
 // Focus on text on start
 text.focus();
 
-
 // Start counting down
 const timeInterval = setInterval(updateTime, 1000);
 
@@ -101,3 +100,27 @@ function gameOver() {
 }
   
 addWordToDOM();
+
+// Typing
+text.addEventListener('input', e => {
+    const insertedText = e.target.value;
+  
+    if (insertedText === randomWord) {
+      addWordToDOM();
+      updateScore();
+  
+      // Clear
+      e.target.value = '';
+  
+      if (difficulty === 'hard') {
+        time += 2;
+      } else if (difficulty === 'medium') {
+        time += 3;
+      } else {
+        time += 5;
+      }
+  
+      updateTime();
+    }
+});
+
