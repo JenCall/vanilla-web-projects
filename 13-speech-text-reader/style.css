@@ -34,3 +34,8 @@ h1 {
     transform: scale(0.98);
 }
 
+.btn:focus,
+select:focus {
+  outline: 0;
+}
+
