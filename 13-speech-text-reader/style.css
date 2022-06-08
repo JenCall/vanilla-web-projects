@@ -61,3 +61,12 @@ select:focus {
 .text-box.show {
     transform: translate(-50%, 0);
 }
+
+.text-box select {
+    background-color: darksalmon;
+    border: 0;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+}
