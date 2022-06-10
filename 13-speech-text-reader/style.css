@@ -110,3 +110,9 @@ main {
 .box.active {
     box-shadow: 0 0 10px 5px darksalmon;
 }
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
