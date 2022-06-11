@@ -56,6 +56,8 @@ const data = [
     }
 ];
 
+data.forEach(createBox);
+
 // create speech boxes
 function createBox(item) {
     const box = document.createElement('div');
