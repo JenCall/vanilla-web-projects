@@ -102,7 +102,12 @@ function getVoices() {
   });
 }
 
-// Set text
+// set text
 function setTextMessage(text) {
     message.text = text;
+}
+
+// speak text
+function speakText() {
+    speechSynthesis.speak(message);
 }
