@@ -82,3 +82,6 @@ function createBox(item) {
   
     main.appendChild(box);
 }
+
+// Init speech synth
+const message = new SpeechSynthesisUtterance();
