@@ -101,3 +101,8 @@ function getVoices() {
     voicesSelect.appendChild(option);
   });
 }
+
+// Set text
+function setTextMessage(text) {
+    message.text = text;
+}
