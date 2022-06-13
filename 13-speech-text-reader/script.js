@@ -111,3 +111,8 @@ function setTextMessage(text) {
 function speakText() {
     speechSynthesis.speak(message);
 }
+
+// set voice
+function setVoice(e) {
+    message.voice = voices.find(voice => voice.name === e.target.value);
+}
