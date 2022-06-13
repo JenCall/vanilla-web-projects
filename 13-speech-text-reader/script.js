@@ -125,7 +125,10 @@ toggleBtn.addEventListener('click', () =>
   document.getElementById('text-box').classList.toggle('show')
 );
 
-// Close button
+// close button
 closeBtn.addEventListener('click', () =>
   document.getElementById('text-box').classList.remove('show')
 );
+
+// change voice
+voicesSelect.addEventListener('change', setVoice);
