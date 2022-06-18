@@ -15,3 +15,14 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+h1 {
+    position: relative;
+}
+  
+h1 button {
+    position: absolute;
+    right: 0;
+    transform: translate(120%, -50%);
+    z-index: 2;
+}
