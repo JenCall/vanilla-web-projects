@@ -52,3 +52,11 @@ h1 button {
     bottom: 30px;
     left: 30px;
 }
+
+.cards {
+    perspective: 1000px;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    max-width: 100%;
+}
