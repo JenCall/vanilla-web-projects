@@ -93,3 +93,7 @@ h1 button {
     transform-style: preserve-3d;
     transition: transform 0.4s ease;
 }
+
+.card.show-answer .inner-card {
+    transform: rotateX(180deg);
+}
