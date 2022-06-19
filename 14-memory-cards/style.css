@@ -79,3 +79,7 @@ h1 button {
     z-index: 10;
     transform: translateX(0) rotateY(0deg);
 }
+
+.card.left {
+    transform: translateX(-50%) rotateY(10deg);
+}
