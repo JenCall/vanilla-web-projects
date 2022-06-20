@@ -116,3 +116,7 @@ h1 button {
     transform: rotateX(0deg);
     z-index: 2;
 }
+
+.inner-card-back {
+    transform: rotateX(180deg);
+}
