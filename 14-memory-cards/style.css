@@ -111,3 +111,8 @@ h1 button {
   width: 100%;
   background: #fff;
 }
+
+.inner-card-front {
+    transform: rotateX(0deg);
+    z-index: 2;
+}
