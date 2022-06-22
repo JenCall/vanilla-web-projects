@@ -13,6 +13,9 @@ const addContainer = document.getElementById('add-container');
 // Store card data
 const cardsData = getCardsData();
 
+// Store DOM cards
+const cardsEl = [];
+
 // Create all cards
 function createCards() {
     cardsData.forEach((data, index) => createCard(data, index));
