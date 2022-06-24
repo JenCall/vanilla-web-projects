@@ -77,3 +77,9 @@ function createCard(data, index) {
 function updateCurrentText() {
     currentEl.innerText = `${currentActiveCard + 1}/${cardsEl.length}`;
 }
+
+// Get cards from local storage
+function getCardsData() {
+    const cards = JSON.parse(localStorage.getItem('cards'));
+    return cards === null ? [] : cards;
+}
