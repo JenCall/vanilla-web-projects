@@ -83,3 +83,5 @@ function getCardsData() {
     const cards = JSON.parse(localStorage.getItem('cards'));
     return cards === null ? [] : cards;
 }
+
+createCards();
