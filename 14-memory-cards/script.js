@@ -84,4 +84,27 @@ function getCardsData() {
     return cards === null ? [] : cards;
 }
 
+// Add card to local storage
+function setCardsData(cards) {
+    localStorage.setItem('cards', JSON.stringify(cards));
+    window.location.reload();
+}
+
 createCards();
+
+// Event listeners
+
+// Next button
+nextBtn.addEventListener('click', () => {
+    cardsEl[currentActiveCard].className = 'card left';
+  
+    currentActiveCard = currentActiveCard + 1;
+  
+    if (currentActiveCard > cardsEl.length - 1) {
+      currentActiveCard = cardsEl.length - 1;
+    }
+  
+    cardsEl[currentActiveCard].className = 'card active';
+  
+    updateCurrentText();
+});
