@@ -123,3 +123,6 @@ prevBtn.addEventListener('click', () => {
   
     updateCurrentText();
 });
+
+// Show add container
+showBtn.addEventListener('click', () => addContainer.classList.add('show'));
