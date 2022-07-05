@@ -98,3 +98,7 @@ body {
         transform: scale(1.2);
     }
 }
+
+.container.shrink {
+    animation: shrink 3s linear forwards;
+}
