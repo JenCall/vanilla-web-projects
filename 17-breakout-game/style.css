@@ -40,3 +40,7 @@ canvas {
 .btn:hover {
     background: #222;
 }
+
+.btn:active {
+    transform: scale(0.98);
+}
