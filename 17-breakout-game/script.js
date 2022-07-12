@@ -37,3 +37,7 @@ const brickInfo = {
     offsetY: 60,
     visible: true
 };
+
+const brickRowCount = 9;
+const brickColumnCount = 5;
+const delay = 500;
