@@ -61,3 +61,12 @@ function drawBall() {
     ctx.fill();
     ctx.closePath();
 }
+
+// Draw paddle on canvas
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
+    ctx.fillStyle = paddle.visible ? '#0095dd' : 'transparent';
+    ctx.fill();
+    ctx.closePath();
+}
