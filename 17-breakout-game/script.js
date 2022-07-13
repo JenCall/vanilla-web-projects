@@ -6,6 +6,10 @@ const ctx = canvas.getContext('2d');
 
 let score = 0;
 
+const brickRowCount = 9;
+const brickColumnCount = 5;
+const delay = 500; //delay to reset the game
+
 // Create ball props
 const ball = {
     x: canvas.width / 2,
@@ -37,7 +41,3 @@ const brickInfo = {
     offsetY: 60,
     visible: true
 };
-
-const brickRowCount = 9;
-const brickColumnCount = 5;
-const delay = 500;
