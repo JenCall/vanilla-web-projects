@@ -119,14 +119,14 @@ function moveBall() {
       ball.dy *= -1;
     }
 
-      // console.log(ball.x, ball.y);
+    // console.log(ball.x, ball.y);
 
-      // Paddle collision
-      if (
-        ball.x - ball.size > paddle.x &&
-        ball.x + ball.size < paddle.x + paddle.w &&
-        ball.y + ball.size > paddle.y
-      ) {
-        ball.dy = -ball.speed;
-      }
+    // Paddle collision
+    if (
+    ball.x - ball.size > paddle.x &&
+    ball.x + ball.size < paddle.x + paddle.w &&
+    ball.y + ball.size > paddle.y
+    ) {
+    ball.dy = -ball.speed;
+    }
 }
