@@ -103,3 +103,19 @@ function movePaddle() {
       paddle.x = 0;
       }
 }
+
+// Move ball on canvas
+function moveBall() {
+    ball.x += ball.dx;
+    ball.y += ball.dy;
+  
+    // Wall collision (right/left)
+    if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
+      ball.dx *= -1; // ball.dx = ball.dx * -1
+    }
+  
+    // Wall collision (top/bottom)
+    if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
+      ball.dy *= -1;
+    }
+}
