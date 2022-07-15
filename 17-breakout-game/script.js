@@ -178,3 +178,10 @@ function increaseScore() {
         },delay)
     }
 }
+
+// Make all bricks appear
+function showAllBricks() {
+    bricks.forEach(column => {
+      column.forEach(brick => (brick.visible = true));
+    });
+}
