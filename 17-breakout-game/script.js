@@ -185,3 +185,14 @@ function showAllBricks() {
       column.forEach(brick => (brick.visible = true));
     });
 }
+
+// Draw everything
+function draw() {
+    // clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+    drawBall();
+    drawPaddle();
+    drawScore();
+    drawBricks();
+}
