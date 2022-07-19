@@ -196,3 +196,16 @@ function draw() {
     drawScore();
     drawBricks();
 }
+
+// Update canvas drawing and animation
+function update() {
+    movePaddle();
+    moveBall();
+  
+    // Draw everything
+    draw();
+  
+    requestAnimationFrame(update);
+}
+  
+update();
