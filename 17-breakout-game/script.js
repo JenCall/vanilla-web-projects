@@ -230,3 +230,7 @@ function keyUp(e) {
       paddle.dx = 0;
     }
 }
+
+// Keyboard event handlers
+document.addEventListener('keydown', keyDown);
+document.addEventListener('keyup', keyUp);
