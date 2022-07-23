@@ -50,3 +50,9 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.countdown {
+    /* display: flex; */
+    display: none;
+    transform: scale(2);
+}
