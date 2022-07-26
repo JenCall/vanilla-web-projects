@@ -5,3 +5,5 @@ const seconds = document.getElementById('seconds');
 const countdown = document.getElementById('countdown');
 const year = document.getElementById('year');
 const loading = document.getElementById('loading');
+
+const currentYear = new Date().getFullYear();
