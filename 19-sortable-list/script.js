@@ -13,3 +13,8 @@ const richestPeople = [
     'Michael Bloomberg',
     'Larry Page'
 ];
+
+// Store listitems
+const listItems = [];
+
+let dragStartIndex;
