@@ -54,3 +54,8 @@ function dragEnter() {
     // console.log('Event: ', 'dragenter');
     this.classList.add('over');
 }
+
+function dragLeave() {
+    // console.log('Event: ', 'dragleave');
+    this.classList.remove('over');
+}
