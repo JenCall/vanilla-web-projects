@@ -49,3 +49,8 @@ function dragStart() {
     // console.log('Event: ', 'dragstart');
     dragStartIndex = +this.closest('li').getAttribute('data-index');
 }
+
+function dragEnter() {
+    // console.log('Event: ', 'dragenter');
+    this.classList.add('over');
+}
