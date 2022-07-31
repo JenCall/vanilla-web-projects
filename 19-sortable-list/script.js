@@ -59,3 +59,8 @@ function dragLeave() {
     // console.log('Event: ', 'dragleave');
     this.classList.remove('over');
 }
+
+function dragOver(e) {
+    // console.log('Event: ', 'dragover');
+    e.preventDefault();
+}
