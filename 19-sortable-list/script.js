@@ -21,6 +21,7 @@ let dragStartIndex;
 
 createList()
 
+// Insert list items into DOM
 function createList() {
     [...richestPeople]
         .map(a => ({ value: a, sort: Math.random() }))
@@ -42,7 +43,9 @@ function createList() {
             listItems.push(listItem);
 
             draggable_list.appendChild(listItem);
-        })
+        });
+
+    addEventListeners();    
 }
 
 function dragStart() {
