@@ -55,3 +55,7 @@ body {
 .draggable-list .person-name {
     margin: 0 20px 0 0;
 }
+
+.draggable-list li.right .person-name {
+    color: #3ae374;
+}
